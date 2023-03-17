@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Bike Service🚵</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/3bc566227f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-5 strong">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>TBS</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="/about.html ">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Login/ SignUp</a></li>
+                <li><a class="dropdown-item" href="#">Change City</a></li>
+                <li><a class="dropdown-item" href="#">Policies</a></li>
+                <li><a class="dropdown-item" href="#">Help & Support</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+                <li><a class="dropdown-item" href="#">Want to Host?</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" target="_blank">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <div class="mx-2">
+        <button class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      </div>
+      <div>
+        <button class="btn btn-outline-light mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+      </div>
+    </nav>
+    <!-- login modal -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Login to start riding!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              </div>
+              <button type="button" class="btn btn-outline-secondary btn-md btn-block">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="" class="link-dark">New to The Bike Service? Sign Up now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- login modal end -->
+
+
+    <!-- signup modal -->
+
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">login to TBS</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- login modal end -->
+
+
+    <!-- signup modal -->
+
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signupModalLabel">Get yout account now!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Firstname">
+                <input type="text" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Lastname">
+
+                <input type="email" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-outline-secondary">Sign Up</button>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- signup modal end -->
+
+    <!-- carousel start -->
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active progress  carousel-fade" style="height: 620px;">
+          <Video src="Pics/video.mp4" muted loop autoplay class="d-block w-100" alt="..."
+            style="min-height: 100%; min-width: 100%; "></Video>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to</h2>
+            <h1>THE BIKE SERVICE</h1>
+            <p>
+            <h4>Ride never ends, Only the destination keeps changing!</h4>
+            </p>
+            <form action="/signup.html" method="post">
+              <button type="submit" class="btn btn-outline-light btn-lg download-button my-2 mx-2">Book a Vehicle</button>
+            </form>
+            <button type="button" class="btn btn-outline-light btn-lg download-button my-2">Become a Host</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container my-4">
+    <h1 class="mb-4 text-center">Book from a range of vehicles!</h1>
+    <div class="row mb-2">
+      <!-- First card -->
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike1.jpg" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Bajaj Pulsar NS-200</h3>
+            <div class="mb-1 text-muted">199.5 cc 36 kmpl 24.13 bhp 159.5 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4 text-decoration-none text-black"><a>Book Now</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike2.webp" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Hero Glamour</h3>
+            <div class="mb-1 text-muted">125 cc 55 kmpl 10.72 bhp 122 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike 3.gif" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Hero Splender Plus Xtec</h3>
+            <div class="mb-1 text-muted">97.2 cc 60 kmpl 7.9 bhp 112 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike4.webp" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Honda Shine</h3>
+            <div class="mb-1 text-muted">123.94 cc 55 kmpl 10.59 bhp 114 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike5.webp" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Hero Passion Pro</h3>
+            <div class="mb-1 text-muted">110 cc 55 kmpl 9.02 bhp 117 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sixth card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">Unavailable!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike6.webp" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">TVS Star City Plus</h3>
+            <div class="mb-1 text-muted">109.7 cc 68 kmpl 8.08 bhp 115 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="disabled btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seventh card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike7.webp" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Bajaj CT 125X</h3>
+            <div class="mb-1 text-muted">124.4 cc 55 kmpl 10.7 bhp 130 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eighth card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike8.webp" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Suzuki Access 125</h3>
+            <div class="mb-1 text-muted">124 cc 48 kmpl 8.6 bhp 104 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ninth card -->
+
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Available!</strong>
+            <div class="row-auto d-none d-lg-block">
+              <img src="Pics/bike9.webp" alt="" class="bd-placeholder-img mx-5" width="300" height="250">
+            </div>
+            <h3 class="mb-1">Honda Activa 125</h3>
+            <div class="mb-1 text-muted">124 cc 47 kmpl 8.18 bhp 111 kg</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <button type="button" class="btn btn-outline-dark btn-lg download-button my-4">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <section class="mb-5" style="background-color:rgba(0, 0, 0) ;">
+    <h4 class="mb-5 text-center p-4" style="color: white;">
+      <strong>Not a member? Sign Up</strong>
+    </h4>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-4">
+        <form>
+          <!-- 2 column grid layout with text inputs for the first and last names -->
+          <div class="row mb-4">
+            <div class="col">
+              <div class="form-outline">
+                <input type="text" id="form3Example1" class="form-control" placeholder="First name" />
+                <label class="form-label" for="form3Example1"></label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-outline">
+                <input type="text" id="form3Example2" class="form-control" placeholder="Last name" />
+                <label class="form-label" for="form3Example2"></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form3Example3" class="form-control" placeholder="Email" />
+            <label class="form-label" for="form3Example3"></label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="form3Example4" class="form-control" placeholder="Password" />
+            <label class="form-label" for="form3Example4"></label>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4" style="color: white;">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" checked />
+            <label class="form-check-label" for="form2Example3">Subscribe to our newsletter</label>
+          </div>
+
+          <!-- Submit button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-light btn-block mb-4">Sign up</button>
+          </div>
+
+
+          <!-- Register buttons -->
+          <div class="text-center" style="color: white;">
+            <p>or sign up with:</p>
+            <button type="button" class="btn btn-outline-light btn-floating mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+
+            <button type="button" class="btn btn-outline-light btn-floating mx-1">
+              <i class="fab fa-google"></i>
+            </button>
+
+            <button type="button" class="btn btn-outline-light btn-floating mx-1">
+              <i class="fab fa-twitter"></i>
+            </button>
+
+            <button type="button" class="btn btn-outline-light btn-floating mx-1 my-3">
+              <i class="fab fa-github"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <p class="conatiner text-center">Have any queries? Share it with us <span><a class="text-decoration-none" href="query.html">here</a></span></p>
+
+  <footer class="container">
+
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow TBS on social media</p>
+      <a href="#" class="btn btn-outline-dark m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" class="btn btn-outline-dark m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="btn btn-outline-dark m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-outline-dark m-1" role="button" rel="nofollow" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <hr class="m-0 py-4" />
+
+    <div class="text-center">
+
+      <p>© 2022–2023 The Bike Service, Inc. · <br><a href="#" class="text-decoration-none" style="color: black;">Privacy
+          policies</a> · <a href="#" class="text-decoration-none" style="color: black;">Terms & Conditions</a></p>
+
+    </div>
+    <p class="float-end"><a href="#" class="text-decoration-none" style="color: black;">Back to top</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
